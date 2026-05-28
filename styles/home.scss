@@ -5,6 +5,8 @@ $fontColorHeadings: #BDBDBD;
 $fontColorBold: #F2F2F2;
 $textOverlay: #FFFFFF;
 $boxColor: #FBFBFB;
+$formBackgroundColor: #F3F3F3;
+$buttonColor: #333333;
 
 $fontFamily: "Roboto", sans-serif;
 
@@ -53,6 +55,12 @@ body img {
 .our-projects {
   grid-column: 1 / 3;
   grid-row: 5 / 6;
+  padding: 20px;
+}
+
+.contact-section {
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
   padding: 20px;
 }
 
@@ -284,6 +292,7 @@ body img {
 .our-projects {
   display: flex;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .our-projects .proj-content {
@@ -325,3 +334,81 @@ body img {
   font-weight: 700;
   line-height: 60px;
 }
+
+.contact-section {
+  display: flex;
+}
+
+.contact-section .contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-section .contact-content h2 {
+  font-size: 64px;
+  font-weight: 300;
+  color: $fontColorHeadings;
+  letter-spacing: 0%;
+  line-height: 22px;
+}
+
+.contact-section .contact-form, .grouped-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-section .contact-form .grouped-form input {
+  width: 391px;
+  height: 45px;
+  padding: 0 15px;
+  background-color: $formBackgroundColor;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-message {
+  height: 147px;
+  background-color: $formBackgroundColor;
+}
+
+.contact-section .contact-form .grouped-contacts, .grouped-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-section .contact-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.contact-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 77px;
+}
+
+.contact-button-container span, svg {
+  color: $backgroundColor;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 20%;
+  text-transform: uppercase;
+}
+
+.contact-content .contact-button-container {
+  width: 221.71px;
+  height: 71px;
+  padding: 0 15px;
+  background-color: $buttonColor;
+}
+
